@@ -1,30 +1,28 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+ <div id="app">
+  <div class="container grid-xs py-2">
+    <header class="navbar">
+      <section class="navbar-section">
+        <router-link to ='/' class="btn btn-link">Home</router-link>
+        <router-link to ='/display' class = "btn btn-link">tarefas</router-link>
+        <img class="img-responsive" src="@/assets/lista.png" alt="coffetag">
+        <a href="https://www.linkedin.com/in/sergio-pinheiro-517978210/" class="btn btn-link" >Linkedin</a>
+        <a href="https://github.com/Serginww" class="btn btn-link">GitHub</a>
+      </section>
+      
+  </header>
+</div>
+<router-view/>
+</div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style scoped>
+
+  img {
+
+    max-width: 100px;
+    margin: 0 auto;
 }
 
-nav {
-  padding: 30px;
-}
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
